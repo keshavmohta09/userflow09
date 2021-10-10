@@ -73,7 +73,6 @@ def details(request):
     except:
         return render(request,'details.html')
     
-       
 def logout(request):
     auth.logout(request)
     return redirect("/")
